@@ -468,7 +468,7 @@ class SvgProcessor:
             if txt_empty:
                 log_debug("Empty text element, skipping...")
                 continue
-            if self.options.math and latex_string[0] is not '$':
+            if self.options.math and latex_string[0] != '$':
                 latex_string = '$' + latex_string + '$'
             log_debug(latex_string)
             rendergroup = lat2svg.render(latex_string, self.options.preamble, self.options.packages, self.options.fontsize, self.options.scale)

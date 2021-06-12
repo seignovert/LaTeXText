@@ -1,3 +1,11 @@
+### 2021-06-21 - v0.1.3 ###
+
+* fixed a warning in latextext.py
+  latextext.py:471: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+    if self.options.math and latex_string[0] is not '$':
+
+* install.sh: now sets the extension path depending on the operating system
+  (Linux and Mac currently supported, more OSes can easily be added later)
 
 ### 2019-03-09 - v0.1.2 ###
 
